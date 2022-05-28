@@ -1,0 +1,36 @@
+{
+    "name": "fb-be-rest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "local": "nodemon --exec babel-node --presets es2015 && ts-node index.ts",
+        "dev": "node --exec babel-node --presets es2015 && ts-node index.ts",
+        "ts-init": "ts-node index.ts",
+        "ts-start": "npm run ts-init && nodemon index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/node": "^7.17.10",
+        "babel-preset-es2015": "^6.24.1",
+        "env": "^0.0.2",
+        "express": "^4.18.1",
+        "mongoose": "^6.3.4",
+        "nodemon": "^2.0.16"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.17.10",
+        "@babel/core": "^7.18.2",
+        "@babel/preset-env": "^7.18.2",
+        "@types/express": "^4.17.13",
+        "@types/node": "^17.0.36",
+        "babel-cli": "^6.26.0",
+        "babel-node": "^0.0.1-security",
+        "babel-preset-env": "^1.7.0",
+        "rimraf": "^3.0.2",
+        "ts-node": "^10.8.0",
+        "typescript": "^4.7.2"
+    }
+}
